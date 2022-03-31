@@ -22,19 +22,21 @@ namespace LineComparison
             SECOND_LINE.ValuesofPoints();
             double Lenghtof2ndLine = SECOND_LINE.FindLength();
             Console.WriteLine("Lenght of the second line is eqval to : {0}", Lenghtof2ndLine);
-
-            bool eqvality = COMPARE_LENGTHS(Lenghtof1stLine, Lenghtof2ndLine);
-            if (eqvality)
+            Console.ReadLine();
+            int eqvality = COMPARE_LENGTHS(Lenghtof1stLine, Lenghtof2ndLine);
+            if (eqvality > 0)
             {
-                Console.WriteLine("Lengths of both the Lines are eqval.");
+                Console.WriteLine("Lengths of 1st line is greater.");
             }
+            else if (eqvality < 0)
+                Console.WriteLine("Length of 2nd Line is greater.");
             else
-                Console.WriteLine("Lengths of both the Lines are Different.");
+                Console.WriteLine("Both the Lines are eqval.");
         }
 
-        public static Boolean COMPARE_LENGTHS(double firstlength, double secondlrngth)
+        public static int COMPARE_LENGTHS(double firstlength, double secondlrngth)
         {
-            return firstlength.Equals(secondlrngth);
+            return firstlength.CompareTo(secondlrngth);
         }
 
         //Console.ReadLine();

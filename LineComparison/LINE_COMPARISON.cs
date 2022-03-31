@@ -19,7 +19,7 @@ namespace LineComparison
             X_END = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Enter Y start point : ");
             Y_START = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Enter Y start point : ");
+            Console.WriteLine("Enter Y end point : ");
             Y_END = Convert.ToDouble(Console.ReadLine());
         }
 
