@@ -23,11 +23,12 @@ namespace LineComparison
             Y_END = Convert.ToDouble(Console.ReadLine());
         }
 
-        public void FindLength()
+        public double FindLength()
         {
             double power1 = Math.Pow((X_END - X_START), 2);
             double power2 = Math.Pow((Y_END - Y_START), 2);
             double Lenght = Math.Sqrt(power1 + power2);
+            return Lenght;
         }
 
     }
